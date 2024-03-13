@@ -30,6 +30,7 @@ class MyTodoSection extends StatelessWidget {
                 onPressed: () {
                   showModalBottomSheet(
                       context: context,
+                      showDragHandle: true,
                       builder: (context) {
                        return HideTodoSheet();
 

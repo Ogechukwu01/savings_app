@@ -47,14 +47,14 @@ class StrictSavingsSection extends StatelessWidget {
                     title: "Target Savings",
                     subtitle: "Smash your savings goal faster",
                     color: Colors.green.shade600,
-                  backgroundColor: Colors.green.shade50
+                  backgroundColor: Colors.purple.shade50
                 ),
                 StrictSavingsItem(
                     textOnButton: "Add Money",
                     title: "HouseMoney",
                     subtitle: "Save for your housing",
                     color: Colors.orange,
-                    backgroundColor: Colors.orange.shade50
+                    backgroundColor: Colors.purple.shade50
                 )
               ],
             ),

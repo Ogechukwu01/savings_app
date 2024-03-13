@@ -29,14 +29,14 @@ class MyTodoItem extends StatelessWidget {
               title,
               style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 18
+                  fontSize: 16
               )),
           LinearProgressIndicator(
             value: progress,
           ),
           IconButton(
             onPressed: onPressed,
-            icon: Icon(Icons.arrow_forward_ios, size: 20,),
+            icon: Icon(Icons.arrow_forward_ios, size: 20),
             style: IconButton.styleFrom(
               backgroundColor: Colors.grey.shade300,
             ),

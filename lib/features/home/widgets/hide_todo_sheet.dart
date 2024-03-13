@@ -33,10 +33,35 @@ class HideTodoSheet extends StatelessWidget {
               child: Divider(),
           ),
           ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+                showDialog(context: context,
+                    builder: (context) {
+                  return AlertDialog(
+                    title: Text("Remind me later"),
+                    content: Text("Are you sure you want to hide your todo list till tomorrow"),
+                    actions: [
+                      TextButton(
+                          onPressed: () {},
+                          child: Text("Yes, remove it"),
+                      ),
+                      TextButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                      },
+                              child: Text("Close")
+
+                      )
+                    ],
+                  );
+                    },
+                );
+              },
               style: ElevatedButton.styleFrom(
-              minimumSize: Size(MediaQuery.of(context).size.width, 55),
-                shape: RoundedRectangleBorder(),
+              minimumSize: Size(MediaQuery.of(context).size.width * 0.9, 55),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
                 side: BorderSide(
                     color:Colors.red.shade700,
                   width: 2,

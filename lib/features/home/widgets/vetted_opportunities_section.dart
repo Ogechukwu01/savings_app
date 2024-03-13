@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:savings_app/features/invest/pages/explore_investment.dart';
 
 class VettedOpportunitiesSection extends StatelessWidget {
   const VettedOpportunitiesSection({super.key});
@@ -21,7 +22,14 @@ class VettedOpportunitiesSection extends StatelessWidget {
                 ),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context){
+                            return ExploreInvestmentsPage();
+                      })
+                      );
+                    },
                     child: Row(
                       children: [
                         Text("Find more"),
@@ -64,7 +72,7 @@ class VOItem extends StatelessWidget {
         children: [
           Image.asset(
           "assets/images/invest_img.png",
-            width: 152,
+            width: 130,
           ),
           Text(
               "Corporate Debt",
@@ -72,7 +80,10 @@ class VOItem extends StatelessWidget {
           fontSize: 18
           ),
           ),
-          Text("10% returns in 9 months"),
+          Text(
+              "10% returns in 9 months",
+            style: TextStyle(fontSize: 11),
+          ),
         ],
       ),
     );

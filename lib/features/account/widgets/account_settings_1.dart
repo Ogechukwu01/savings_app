@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:savings_app/features/account/widgets/account_settings_item.dart';
 

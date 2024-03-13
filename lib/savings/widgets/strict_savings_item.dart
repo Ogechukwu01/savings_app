@@ -48,7 +48,7 @@ class StrictSavingsItem extends StatelessWidget {
                 Text(
                   title,
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                       color: color
                   ),

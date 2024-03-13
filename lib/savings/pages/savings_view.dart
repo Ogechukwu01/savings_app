@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:savings_app/features/home/widgets/saving_details_card.dart';
+import 'package:savings_app/savings/pages/quick_save_page.dart';
 import 'package:savings_app/savings/widgets/flexible_savings_section.dart';
 import 'package:savings_app/savings/widgets/strict_savings_section.dart';
 
@@ -23,7 +24,7 @@ class SavingsView extends StatelessWidget {
         padding: EdgeInsets.all(16),
         children: [
           SavingDetailsCard(
-            balance: "\$24000",
+            balance: "24000",
             topRightWidget: Chip(
                 label: Text(
                     "up to 13% returns",
@@ -32,6 +33,14 @@ class SavingsView extends StatelessWidget {
                 backgroundColor: Colors.black,
                 shape: StadiumBorder(),
             ),
+            onClick: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return QuickSavePage();
+                }),
+              );
+            },
           ),
           StrictSavingsSection(),
           FlexibleSavingsSection(),

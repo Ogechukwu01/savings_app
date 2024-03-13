@@ -16,7 +16,7 @@ class AccountToggles extends StatelessWidget {
             trailing: Switch(
               value: true,
               onChanged: (value) {},
-              activeColor: Colors.green.shade200,
+              activeColor: Colors.purple.shade200,
             ),
           ),
           ListTile(
@@ -24,7 +24,7 @@ class AccountToggles extends StatelessWidget {
             trailing: Switch(
               value: true,
               onChanged: (value) {},
-              activeColor: Colors.green.shade200,
+              activeColor: Colors.purple.shade200,
             ),
           ),
           ListTile(
@@ -32,7 +32,7 @@ class AccountToggles extends StatelessWidget {
             trailing: Switch(
               value: true,
               onChanged: (value) {},
-              activeColor: Colors.green.shade200,
+              activeColor: Colors.purple.shade200,
             ),
           ),
         ],

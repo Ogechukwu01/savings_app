@@ -32,7 +32,7 @@ class FlexibleSavingsSection extends StatelessWidget {
                  title: "Flex Dollar",
                  subtitle: "Save in dollars,earn interest",
                  color: Colors.black87,
-                 backgroundColor: Colors.lightGreenAccent,
+                 backgroundColor: Colors.pink.shade100,
              ),
              StrictSavingsItem(
                  textOnButton: "NGN 400000",
